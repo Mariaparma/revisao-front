@@ -1,15 +1,27 @@
-"use client"
+"use client";
+import { useState, useEffect } from 'react';
+import { productsData } from '../data/products.js';
+import ProductCard from '@/components/ProductCard/ProductCard.jsx'
+import styles from './page.module.css';
 
-import Header from "../components/Header/Header";
+export default function HomePage() {
+  const [products, setProducts] = useState([]);
+  const [productCount, setProductCount] = useState(0);
 
-export default function Page() {
+  useEffect(() => {
+    setProducts(productsData);
+  }, []);
+
+
+  useEffect(() => {
+    setProductCount(products.length);
+  }, [products]);
+
   return (
-    <div>
-      <Header />
-      <main>
-        <h2>Bem-vindo ao Meu App!</h2>
-        <p>Esta é a página inicial.</p>
-      </main>
+    <div className={styles.products}>
+      {products.map(product => (
+       <ProductCard key={product.id} product={product} />
+      ))}
     </div>
   );
 }

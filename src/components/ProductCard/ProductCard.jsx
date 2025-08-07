@@ -1,20 +1,16 @@
 import styles from "./ProductCard.module.css";
-import Image from "next/image";
 
 const ProductCard = ({ product }) => {
   return (
     <div className={styles.productcard} data-category={product.category}>
       <div className={styles.productimage}>
-        <Image
-          src={product.image}
-          alt="Responsive"
-          width={800}
-          height={600}
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        />
+          <img
+        src={product.image}
+        alt={product.title}
+        width={250}
+        height={160}
+        style={{ borderRadius: '8px' }}
+    />
       </div>
       <div className={styles.producttitle}>{product.title}</div>
       <div className={styles.productprice}>R$ {product.price}</div>

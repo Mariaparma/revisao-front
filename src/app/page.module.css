@@ -45,7 +45,7 @@
 
 .product-price {
     font-size: 24px;
-    color: #e74c3c;
+    color: #c34770;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -61,5 +61,5 @@
 }
 
 .stars {
-    color: #ffc107;
+    color: #bbb7aa;
 }

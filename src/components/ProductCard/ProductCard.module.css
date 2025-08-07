@@ -5,7 +5,7 @@
 }
 
 .productcard {
-    background: white;
+    background: #cbaac0;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
 
 .productprice {
     font-size: 24px;
-    color: #e74c3c;
+    color: #b94993;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -46,5 +46,5 @@
 }
 
 .stars {
-    color: #ffc107;
+    color: #bbb7aa;
 }

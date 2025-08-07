@@ -2,7 +2,7 @@ import styles from './Header.module.css';
 
 const Header = ({titulo, descricao}) => {
   
-    const tituloExibido = titulo ? titulo :  " 🛒 Loja de Eletrônicos";
+    const tituloExibido = titulo ? titulo :  " Loja de Eletrônicos";
     const descricaoExibida = descricao ? descricao : "Encontre os melhores produtos eletrônicos aqui!";
     return (
         <div className={styles.header}>
